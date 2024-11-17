@@ -6,11 +6,10 @@ btnLearnMore.addEventListener("click", event => {
 
     contentText.classList.remove("content-content__text--state-hidden");
     contentText.classList.add("content-content__text--state-visible");
-    btnLearnMore.textContent = "Hide";
+    btnLearnMore.remove();
   } else { 
     contentText.classList.remove("content-content__text--state-visible");
     contentText.classList.add("content-content__text--state-hidden");
-    btnLearnMore.textContent = "Learn more";
   }
 
 });
